@@ -26,6 +26,11 @@ function removeEven(arr){
     return arr.filter(num => num % 2 !== 0)
 }
 
+const input = prompt("Enter numbers seperated by commas: ")
+const numbers = input.split(',').map(Number);
+
+console.log(removeEven(numbers))
+
 // #2
 
 
