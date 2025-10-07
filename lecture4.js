@@ -22,18 +22,21 @@ const prompt = require('prompt-sync')();
 
 // #1
 
-function removeEven(arr){
-    return arr.filter(num => num % 2 !== 0)
-}
+// function removeEven(arr){
+//     return arr.filter(num => num % 2 !== 0);
+// }
 
-const input = prompt("Enter numbers seperated by commas: ")
-const numbers = input.split(',').map(Number);
+// const input = prompt("Enter numbers seperated by commas: ");
+// const numbers = input.split(',').map(Number);
 
-console.log(removeEven(numbers))
+// console.log(removeEven(numbers));
 
 // #2
 
-
+const arr = [1, 2, 2, 3, 4, 4, 5];
+const uniqueSet = new Set(arr);
+const uniqueArray = [...uniqueSet];
+console.log(uniqueArray);
 
 // #3
 
