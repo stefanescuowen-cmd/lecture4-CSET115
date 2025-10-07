@@ -22,33 +22,36 @@ const prompt = require('prompt-sync')();
 
 // #1
 
-// function removeEven(arr){
-//     return arr.filter(num => num % 2 !== 0);
-// }
+function removeEven(arr){
+    return arr.filter(num => num % 2 !== 0);
+}
+console.log("Exercise 1: ");
+console.log(removeEven([1, 2, 4, 5, 10, 6, 3]));
 
-// const input = prompt("Enter numbers seperated by commas: ");
-// const numbers = input.split(',').map(Number);
-
-// console.log(removeEven(numbers));
+console.log("\n")
 
 // #2
 
-// const arr = [1, 2, 2, 3, 4, 4, 5];
-// const uniqueSet = new Set(arr);
-// const uniqueArray = [...uniqueSet];
-// console.log(uniqueArray);
+const arr = [1, 2, 2, 3, 4, 4, 5];
+const uniqueSet = new Set(arr);
+const uniqueArray = [...uniqueSet];
+console.log("Exercise 2: ")
+console.log(uniqueArray);
+
+console.log("\n")
 
 // #3
 
 function check(arr, num){
     return arr.includes(num);
 }
-
+console.log("Exercise 3: ")
 console.log(check([1, 2, 3, 4, 5], 3))
 console.log(check([1, 1, 2, 1, 1], 3))
 console.log(check([5, 5, 5, 6], 5))
 console.log(check([], 5))
 
+console.log("\n")
 
 // #4
 
@@ -58,5 +61,6 @@ function numObj(arr){
     });
 }
 
+console.log("Exercise 4: ");
 console.log(numObj([118, 117, 120]));
-console.log([101, 121, 110, 113, 103])
+console.log(numObj([101, 121, 110, 113, 103]));
